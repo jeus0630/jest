@@ -1,13 +1,9 @@
 import fn from "./fn";
 
-test('1은 1이야',() =>{
-    expect(1).toBe(1);
-});
-
-test('2 + 3 = 5야',() => {
-    expect(fn.add(2,3)).toBe(5);
+test('이름과 나이를 받아서 객체로 만들어줘',() => {
+    expect(fn.makeUser('Mike',30)).toBe({name : 'Mike', age: 30});
 })
 
-test('3 + 3 = 5야',() => {
-    expect(fn.add(3,3)).toBe(5);
+test('이름과 나이를 받아서 객체로 만들어줘',() => {
+    expect(fn.makeUser('Mike',30)).toEqual({name : 'Mike', age: 30});
 })
