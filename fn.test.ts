@@ -1,9 +1,8 @@
 import fn from "./fn";
 
-test('이름과 나이를 받아서 객체로 만들어줘',() => {
-    expect(fn.makeUser('Mike',30)).toBe({name : 'Mike', age: 30});
-})
+test('유저 리스트에 Mike가 있니?',()=>{
+    const name = "Mike";
+    const lists = ["Tom","Mike","Kai"];
 
-test('이름과 나이를 받아서 객체로 만들어줘',() => {
-    expect(fn.makeUser('Mike',30)).toEqual({name : 'Mike', age: 30});
+    expect(lists).toContain(name);
 })
